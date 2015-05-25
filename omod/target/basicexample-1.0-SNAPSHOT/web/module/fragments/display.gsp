@@ -1,3 +1,0 @@
-<% patients.each { %>
-${ it.names }
-<%}%>

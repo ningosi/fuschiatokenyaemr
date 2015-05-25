@@ -17,7 +17,7 @@
 
 	
 	<!-- Module Activator -->
-	<activator>org.openmrs.module.fuschiatokenyaemr.BasicExampleActivator</activator>
+	<activator>org.openmrs.module.fuschiatokenyaemr.FuschiaToKenyaemrActivator</activator>
 
 	<require_modules>
 		<require_module version="${uiframeworkVersion}">org.openmrs.module.uiframework</require_module>

@@ -36,9 +36,7 @@ public class BasicConstants {
         public static final String UNIQUE_PATIENT_NUMBER = "05ee9cf4-7242-4a17-b4d4-00f707265c8a";
     }
 
-    public static final class _Program {
-        public static final String HIV = "dfdc6d40-2f2f-463d-ba90-cc97350441a8";
-    }
+
 
 
     public static final class _VisitType {

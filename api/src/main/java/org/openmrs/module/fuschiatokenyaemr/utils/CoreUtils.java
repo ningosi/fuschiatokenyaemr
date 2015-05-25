@@ -12,28 +12,6 @@ public class CoreUtils {
 
     public final static  SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 
-    public static Date getBirthDate(String date1, String age) throws Exception{
-
-        Calendar calendar = Calendar.getInstance();
-        Date date = null;
-        if (!(date1.isEmpty())) {
-            date = formatter.parse(date1);
-            int years = Math.round(Integer.parseInt(age));
-            calendar.setTime(date);
-            calendar.add(Calendar.YEAR,  -years);
-            date = calendar.getTime();
-        }
-        return date;
-    }
-
-    public static Date getDateFromString(String date) throws ParseException {
-
-        return formatter.parse(date);
-    }
-
-    public static String  formatDate(Date date) {
-        return formatter.format(date);
-    }
 
     public static Date addDate(Date date, int years) {
         Calendar calendar = Calendar.getInstance();

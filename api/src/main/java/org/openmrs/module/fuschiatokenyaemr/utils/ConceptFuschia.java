@@ -27,11 +27,7 @@ public class ConceptFuschia {
         public static final String SOLDIER = "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String BUSINESS = "159673AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String UNEMPLOYED = "123801AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String STUDENT = "159465AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String FISHER_MAN = "159674AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String CHILD = "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String UNSPECIFIED = "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-
 
     }
 
@@ -41,9 +37,6 @@ public class ConceptFuschia {
         public static final String TB_CLINIC = "160541AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String PMTCT = "160538AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String VCT = "160539AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String TRANSFER_IN = "160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String PEP = "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String UNDER_FIVE = "160544AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String OPD = "160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String MCH = "159937AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String OTHER = "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
@@ -80,5 +73,32 @@ public class ConceptFuschia {
         public static final String WEIGHT_KG = "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String HEIGHT_CM = "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String HGB = "21AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+    }
+
+    public static final class _DRUGS {
+        public static final String D4T = "84309AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String NVP = "80586AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String TC3 = "78643AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String EFV = "75523AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String DDI = "74807AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String AZT = "86663AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String ABC = "70056AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String TDF = "84795AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String FTC = "75628AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String APV = "71193AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String IDV = "77995AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String LPV = "79040AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String RTV = "83412AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String NFV = "80487AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String SQV = "83690AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String ATZ = "71647AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
+        //other medication orders
+        public static final String COTRIMOXAZOLE = "105281AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String FLUCONAZOLE = "76488AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String ISONIAZID_PROPHYLAXIS = "1679AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String DAPSONE = "74250AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String ITRACONAZOLE = "78338AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
     }
 }

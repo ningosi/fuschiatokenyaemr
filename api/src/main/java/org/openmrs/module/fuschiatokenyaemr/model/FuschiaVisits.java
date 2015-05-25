@@ -10,11 +10,11 @@ public class FuschiaVisits {
     private Date dateCreated;
     private Date visitDate;
     private Date nextAppointmentDate;
-    private Double cd4;
-    private Double viralLoad;
-    private Double weight;
-    private Double height;
-    private Double hgb;
+    private Short cd4;
+    private Integer viralLoad;
+    private Float weight;
+    private Short height;
+    private Float hgb;
 
     public Date getDateCreated() {
         return dateCreated;
@@ -40,43 +40,43 @@ public class FuschiaVisits {
         this.nextAppointmentDate = nextAppointmentDate;
     }
 
-    public Double getCd4() {
+    public Short getCd4() {
         return cd4;
     }
 
-    public void setCd4(Double cd4) {
+    public void setCd4(Short cd4) {
         this.cd4 = cd4;
     }
 
-    public Double getViralLoad() {
+    public Integer getViralLoad() {
         return viralLoad;
     }
 
-    public void setViralLoad(Double viralLoad) {
+    public void setViralLoad(Integer viralLoad) {
         this.viralLoad = viralLoad;
     }
 
-    public Double getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(Float weight) {
         this.weight = weight;
     }
 
-    public Double getHeight() {
+    public Short getHeight() {
         return height;
     }
 
-    public void setHeight(Double height) {
+    public void setHeight(Short height) {
         this.height = height;
     }
 
-    public Double getHgb() {
+    public Float getHgb() {
         return hgb;
     }
 
-    public void setHgb(Double hgb) {
+    public void setHgb(Float hgb) {
         this.hgb = hgb;
     }
 }

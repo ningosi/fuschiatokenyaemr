@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openmrs.module:kenyaemr-api:14.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/kenyaemr-api/14.2-SNAPSHOT/kenyaemr-api-14.2-20141118.144240-83.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/kenyaemr-api/14.2-SNAPSHOT/kenyaemr-api-14.2-20141118.144240-83-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openmrs/module/kenyaemr-api/14.2-SNAPSHOT/kenyaemr-api-14.2-20141118.144240-83-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

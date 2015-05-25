@@ -51,7 +51,7 @@ import java.util.Set;
 /**
  * this class contains methods that will be able to connect to access database and pull things to mysql
  */
-@Service("basicexample.updateService")
+@Service("fuschiatokenyaemr.updateService")
 
 public class AccessDatabase {
 
@@ -100,7 +100,7 @@ public class AccessDatabase {
         return getDatabase().getTable("tbFollowUp");
     }
 
-    public List<Row> visitMatchingRows(Integer patientId) throws IOException {
+    List<Row> visitMatchingRows(Integer patientId) throws IOException {
         List<Row> allRowsInVisitTable = new ArrayList<Row>();
 
         for(Row row :getVisitsTable()) {
@@ -110,6 +110,20 @@ public class AccessDatabase {
         }
 
         return allRowsInVisitTable;
+    }
+
+    List<Row> getPatientDrugOrders(Integer patientId) throws IOException {
+        List<Row> allRowsInDrugTable = new ArrayList<Row>();
+
+        for(Row row :getDatabase().getTable("TbPatientDrug")) {
+
+            if(row.getInt("FdxReferencePatient").equals(patientId)) {
+                allRowsInDrugTable.add(row);
+            }
+
+        }
+
+        return allRowsInDrugTable;
     }
 
     public Map<Integer, Integer> numberOfPatientsAndVisits() throws IOException{
@@ -380,7 +394,7 @@ public class AccessDatabase {
                     //tie those set of observations to the encounter and save them into openmrs
                     hivEnrollmentEncounter.setObs(hivEnrollmentObsSet);
 
-                    if (!(hivEnrollmentEncounter.getAllObs().isEmpty()) && hivDiscontinuationEncounter.getEncounterDatetime().before(new Date())) {
+                    if (!(hivEnrollmentEncounter.getAllObs().isEmpty()) && hivEnrollmentEncounter.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                         encounterService.saveEncounter(hivEnrollmentEncounter);
                         PatientProgram hivProgramEnrollment = new PatientProgram();
                         hivProgramEnrollment.setDateEnrolled(hivEnrollmentDate);
@@ -393,7 +407,7 @@ public class AccessDatabase {
                         programWorkflowService.savePatientProgram(hivProgramEnrollment);
                     }
 
-                    if (!(hivDiscontinuationEncounter.getAllObs().isEmpty()) && hivDiscontinuationEncounter.getEncounterDatetime().before(new Date())) {
+                    if (!(hivDiscontinuationEncounter.getAllObs().isEmpty()) && hivDiscontinuationEncounter.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                         encounterService.saveEncounter(hivDiscontinuationEncounter);
                         PatientProgram hivProgramDiscontinuation = new PatientProgram();
                         hivProgramDiscontinuation.setDateCompleted(dateCreated);
@@ -432,25 +446,25 @@ public class AccessDatabase {
 
                         //tie the who stage to the addendum and save
                         hivConsultationAdd.addObs(whoStageObs);
-                        if (!(hivConsultationAdd.getAllObs().isEmpty()) && hivConsultationAdd.getEncounterDatetime().before(new Date())) {
+                        if (!(hivConsultationAdd.getAllObs().isEmpty()) && hivConsultationAdd.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                             encounterService.saveEncounter(hivConsultationAdd);
                         }
                     }
                 }
 
                 //save visits from here
-
+                System.out.println("Patient "+fuschiaPatientDataBaseId+" has "+visitMatchingRows(fuschiaPatientDataBaseId).size()+" visits");
                 for(Row visitRow: visitMatchingRows(fuschiaPatientDataBaseId)) {
 
                     FuschiaVisits fuschiaVisits = new FuschiaVisits();
                     fuschiaVisits.setDateCreated(visitRow.getDate("FddCreated"));
                     fuschiaVisits.setVisitDate(visitRow.getDate("FddVisit"));
                     fuschiaVisits.setNextAppointmentDate(visitRow.getDate("FddVisitNext"));
-                    fuschiaVisits.setCd4(Double.parseDouble(removingDecimal(visitRow.getString("FdnLymphocyteCD4"))));
-                    fuschiaVisits.setViralLoad(Double.parseDouble(removingDecimal(visitRow.getString("FdnHIVLoad"))));
-                    fuschiaVisits.setHeight(Double.parseDouble(removingDecimal(visitRow.getString("FdnHeight"))));
-                    fuschiaVisits.setWeight(Double.parseDouble(removingDecimal(visitRow.getString("FdrWeight"))));
-                    fuschiaVisits.setHgb(Double.parseDouble(removingDecimal(visitRow.getString("FdrHemoglobinemia"))));
+                    fuschiaVisits.setCd4(visitRow.getShort("FdnLymphocyteCD4"));
+                    fuschiaVisits.setViralLoad(visitRow.getInt("FdnHIVLoad"));
+                    fuschiaVisits.setHeight(visitRow.getShort("FdnHeight"));
+                    fuschiaVisits.setWeight(visitRow.getFloat("FdrWeight"));
+                    fuschiaVisits.setHgb(visitRow.getFloat("FdrHemoglobinemia"));
 
                     Date visitDate = fuschiaVisits.getVisitDate() ;
                     if(visitDate == null) {
@@ -497,7 +511,7 @@ public class AccessDatabase {
                         if(fuschiaVisits.getCd4() != null) {
                             cd4.setPerson(newPatient);
                             cd4.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.CD4_COUNT));
-                            cd4.setValueNumeric(fuschiaVisits.getCd4());
+                            cd4.setValueNumeric(fuschiaVisits.getCd4().doubleValue());
                             cd4.setObsDatetime(visitDate);
                             cd4.setDateCreated(new Date());
 
@@ -511,7 +525,7 @@ public class AccessDatabase {
                             viralLoad.setObsDatetime(visitDate);
                             viralLoad.setPerson(newPatient);
                             viralLoad.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HIV_VIRAL_LOAD));
-                            viralLoad.setValueNumeric(fuschiaVisits.getViralLoad());
+                            viralLoad.setValueNumeric(fuschiaVisits.getViralLoad().doubleValue());
                             viralLoad.setDateCreated(new Date());
 
                             visitObs.add(viralLoad);
@@ -523,7 +537,7 @@ public class AccessDatabase {
                             weight.setObsDatetime(visitDate);
                             weight.setPerson(newPatient);
                             weight.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.WEIGHT_KG));
-                            weight.setValueNumeric(fuschiaVisits.getWeight());
+                            weight.setValueNumeric(fuschiaVisits.getWeight().doubleValue());
                             weight.setDateCreated(new Date());
 
                             visitObs.add(weight);
@@ -535,7 +549,7 @@ public class AccessDatabase {
                             height.setObsDatetime(visitDate);
                             height.setPerson(newPatient);
                             height.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HEIGHT_CM));
-                            height.setValueNumeric(fuschiaVisits.getHeight());
+                            height.setValueNumeric(fuschiaVisits.getHeight().doubleValue());
                             height.setDateCreated(new Date());
 
                             visitObs.add(height);
@@ -543,11 +557,11 @@ public class AccessDatabase {
 
                         //hgb
                         Obs hgb = new Obs();
-                        if(fuschiaVisits.getHeight() != null) {
+                        if(fuschiaVisits.getHgb() != null) {
                             hgb.setObsDatetime(visitDate);
                             hgb.setPerson(newPatient);
                             hgb.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HGB));
-                            hgb.setValueNumeric(fuschiaVisits.getHeight());
+                            hgb.setValueNumeric(fuschiaVisits.getHgb().doubleValue());
                             hgb.setDateCreated(new Date());
 
                             visitObs.add(hgb);
@@ -571,6 +585,14 @@ public class AccessDatabase {
 
                 }
                 //save drug orders from here
+                System.out.println("Patient "+fuschiaPatientDataBaseId+" has "+getPatientDrugOrders(fuschiaPatientDataBaseId)+" drug orders");
+
+                //list all the data variables that will be fetched from the drug table
+                for(Row drugOrder : getPatientDrugOrders(fuschiaPatientDataBaseId)) {
+
+                }
+
+                //save medication orders here if any
             }
 
         }
@@ -589,23 +611,5 @@ public class AccessDatabase {
         url.setPropertyValue(path);
         adminService.saveGlobalProperty(url);
     }
-
-    String removingDecimal(String value) {
-        String setVal = "";
-        if(value == null || value.isEmpty()) {
-          setVal = "0";
-        }
-        else if(value.contains(".")){
-            //take the value and check if it has a decimal place and remove it
-            setVal = value.split("\\.")[0];
-        }
-        else {
-            setVal = value;
-        }
-
-        return setVal;
-    }
-
-
 
 }
