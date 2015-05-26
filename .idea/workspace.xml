@@ -1,451 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" line="61" />
+    <bookmark url="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" line="70" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e61cfe-5332-4766-a392-d42853424a49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_util_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ca_uhn_hapi_hapi_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_2_135.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_healthmarketscience_jackcess_jackcess_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_healthmarketscience_jackcess_jackcess_encrypt_2_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_28.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_saxon_8_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_saxon_dom_8_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jtds_jtds_1_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbyclient_10_4_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_5_beta5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_6_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_azeckoski_reflectutils_0_9_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15_1_45.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_databene_databene_benerator_0_5_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_databene_databene_commons_0_4_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_databene_databene_gui_0_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_databene_databene_webdecs_0_4_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dbunit_dbunit_2_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_3_6_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_3_6_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_17_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_2_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ocpsoft_prettytime_prettytime_2_1_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_api_openmrs_api_1_9_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_api_openmrs_api_test_jar_tests_1_9_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_directwebremoting_dwr_2_0_5_mod.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_hibernate_hibernate_core_3_6_5_Final_mod.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_liquibase_ext_identity_insert_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_liquibase_ext_modify_column_2_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_liquibase_ext_type_converter_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appframework_api_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_calculation_api_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_idgen_api_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_kenyacore_api_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_kenyaemr_api_14_2_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_kenyaui_api_2_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_metadatadeploy_api_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_reporting_api_0_9_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_uicommons_api_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_uiframework_api_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_simpleframework_simple_xml_1_6_1_mod.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_web_openmrs_web_1_9_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_web_openmrs_web_test_jar_tests_1_9_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_mockito_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_support_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_core_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_reflect_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_0_801_jdbc4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__sslext_sslext_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_page_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_request_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_response_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_03.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlunit_xmlunit_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/HivClientsReportBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/calculations/Cd4Calculation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/calculations/VmmcCCalculation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/converts/CalculationResultBasicConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/converts/MaritalStatusConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/basicexample-api-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/fuschiatokenyaemr/fragment/controller/DisplayFragmentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/fuschiatokenyaemr/web/controller/BasicExampleManageController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/lakehub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/vmmcDiscontinuation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/htmlforms/vmmcEnrollment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT.omod" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/basicexample-api/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/basicexample-api/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/basicexample-api-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/bcprov-jdk15-1.45.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/commons-lang-2.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/commons-logging-1.1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/jackcess-2.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/lib/jackcess-encrypt-2.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/messages_es.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/messages_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/moduleApplicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_PatientIdentifierType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_PersonAttributeType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Provider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_RelationshipType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_VisitType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Concept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/database/AccessDatabase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/extension/html/AdminList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/fragment/controller/DisplayFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaCivilStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaMethodOfEnrollment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaOpenMRSId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaPatient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaPatientNames.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaProfession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaVisits.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaWhoStaging.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/page/controller/DisplayPageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/BasicCalculationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Marital_Status.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Profession_Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Transfer_In_Details.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/CoreUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/basicexample/web/controller/BasicExampleManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_PatientIdentifierType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/extension/html/AdminList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/fragment/controller/DisplayFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaCivilStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaOpenMRSId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaProfession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaWhoStaging.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/page/controller/DisplayPageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Marital_Status.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/web/controller/BasicExampleManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/fragments/display.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/manage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/pages/display.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/resources/htmlforms/lakehub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/resources/htmlforms/vmmcDiscontinuation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/resources/htmlforms/vmmcEnrollment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/web/module/template/localHeader.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/basicexample-1.0-SNAPSHOT/webModuleApplicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/basicexample-api/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/basicexample-api/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_PatientIdentifierType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_PersonAttributeType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_Provider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_RelationshipType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants$_VisitType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/LakeHubMetadata$_Concept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/LakeHubMetadata$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/LakeHubMetadata$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/LakeHubMetadata$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/LakeHubMetadata.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/database/AccessDatabase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaCivilStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaMethodOfEnrollment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaOpenMRSId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaPatient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaPatientNames.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaProfession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaVisits.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/model/FuschiaWhoStaging.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/BasicCalculationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_Marital_Status.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_Profession_Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_Transfer_In_Details.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/ConceptFuschia.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/basicexample/utils/CoreUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/fragment/controller/DisplayFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/web/controller/BasicExampleManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/htmlforms/lakehub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/htmlforms/vmmcDiscontinuation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/classes/web/module/resources/htmlforms/vmmcEnrollment.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-basicexample-api-jar-1.0-SNAPSHOT.marker" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/basicexample-api/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/basicexample-api/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_PatientIdentifierType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_PersonAttributeType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_Provider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_RelationshipType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants$_VisitType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Concept.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_EncounterType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Form.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/LakeHubMetadata.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/database/AccessDatabase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaCivilStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaMethodOfEnrollment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaOpenMRSId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaPatient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaPatientNames.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaProfession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaVisits.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/model/FuschiaWhoStaging.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/BasicCalculationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Marital_Status.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Profession_Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_Transfer_In_Details.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/ConceptFuschia.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/basicexample/utils/CoreUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicExampleActivator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/HivClientsReportBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/calculations/Cd4Calculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/calculations/VmmcCCalculation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/converts/CalculationResultBasicConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/converts/MaritalStatusConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/fragment/controller/DisplayFragmentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/web/controller/BasicExampleManageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/web/module/resources/htmlforms/lakehub.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/web/module/resources/htmlforms/vmmcDiscontinuation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/web/module/resources/htmlforms/vmmcEnrollment.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicExampleActivator.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/FuschiaToKenyaemrActivator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants$_VisitType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/BasicConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_HIV_DISCONTINUATION.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Mode_Of_Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_VISIT_METADATA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_WHO_STAGE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT.omod" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT.omod" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/fuschiatokenyaemr-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/api/target/fuschiatokenyaemr-api-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/lib/fuschiatokenyaemr-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/lib/fuschiatokenyaemr-api-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/config.xml" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/fuschiatokenyaemr-api.iml" afterPath="$PROJECT_DIR$/api/fuschiatokenyaemr-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/fuschiatokenyaemr-omod.iml" afterPath="$PROJECT_DIR$/omod/fuschiatokenyaemr-omod.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fuschiatokenyaemr.iml" afterPath="$PROJECT_DIR$/fuschiatokenyaemr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/moduleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/moduleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/fuschiatokenyaemr-api/pom.properties" afterPath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/fuschiatokenyaemr-api/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/fuschiatokenyaemr-api/pom.properties" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/META-INF/maven/org.openmrs.module/fuschiatokenyaemr-api/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/webModuleApplicationContext.xml" afterPath="$PROJECT_DIR$/omod/target/fuschiatokenyaemr-1.0-SNAPSHOT/webModuleApplicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaWhoStaging.java" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaWhoStaging.java" />
     </list>
     <ignored path="fuschiatokenyaemr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -474,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="98" column="58" selection-start-line="98" selection-start-column="58" selection-end-line="98" selection-end-column="58" />
+              <caret line="65" column="81" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -483,21 +48,11 @@
       <file leaf-file-name="AccessDatabase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9925926">
-              <caret line="589" column="86" selection-start-line="589" selection-start-column="86" selection-end-line="589" selection-end-column="86" />
+            <state vertical-scroll-proportion="-34.255318">
+              <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
               <folding>
-                <element signature="e#4210#4228#0" expanded="true" />
+                <element signature="e#4454#4472#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FuschiaCivilStatus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaCivilStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -522,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/fuschiatokenyaemr/fragment/controller/DisplayFragmentController.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/CoreUtils.java" />
@@ -530,8 +84,11 @@
         <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
         <option value="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaVisits.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaWhoStaging.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.java" />
       </list>
     </option>
@@ -552,7 +109,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="49" />
-    <option name="y" value="75" />
+    <option name="y" value="52" />
     <option name="width" value="1861" />
     <option name="height" value="1005" />
   </component>
@@ -1057,21 +614,24 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="47e61cfe-5332-4766-a392-d42853424a49" name="Default" comment="" />
       <created>1432535234979</created>
       <option name="number" value="Default" />
       <updated>1432535234979</updated>
-      <workItem from="1432535238008" duration="24046000" />
+      <workItem from="1432535238008" duration="54009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24046000" />
+    <option name="totallyTimeSpent" value="54009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="75" width="1861" height="1005" extended-state="0" />
+    <frame x="49" y="52" width="1861" height="1005" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1091,7 +651,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.8186937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.8873874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1099,6 +659,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1175,65 +743,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaCivilStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22900763">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.9.8/openmrs-api-1.9.8-sources.jar!/org/openmrs/Drug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697">
+        <state vertical-scroll-proportion="0.7425743">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.9.8/openmrs-api-1.9.8-sources.jar!/org/openmrs/OrderType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80443287">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.9.8/openmrs-api-1.9.8-sources.jar!/org/openmrs/DrugOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6304348">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.15645371">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.9.8/openmrs-api-1.9.8-sources.jar!/org/openmrs/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34550196">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.9.8/openmrs-api-1.9.8-sources.jar!/org/openmrs/Encounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8876405">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/BasicConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.30364373">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaCivilStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="58" selection-start-line="98" selection-start-column="58" selection-end-line="98" selection-end-column="58" />
+          <caret line="65" column="81" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84817815">
-          <caret line="457" column="88" selection-start-line="457" selection-start-column="88" selection-end-line="457" selection-end-column="88" />
+        <state vertical-scroll-proportion="1.5257732">
+          <caret line="503" column="27" selection-start-line="503" selection-start-column="27" selection-end-line="503" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#611#622#0" expanded="true" />
+            <element signature="e#784#795#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/model/FuschiaWhoStaging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9329897">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/fuschiatokenyaemr/database/AccessDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9925926">
-          <caret line="589" column="86" selection-start-line="589" selection-start-column="86" selection-end-line="589" selection-end-column="86" />
+        <state vertical-scroll-proportion="-34.255318">
+          <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
           <folding>
-            <element signature="e#4210#4228#0" expanded="true" />
+            <element signature="e#4454#4472#0" expanded="true" />
           </folding>
         </state>
       </provider>

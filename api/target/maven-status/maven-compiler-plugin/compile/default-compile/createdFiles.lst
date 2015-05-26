@@ -13,6 +13,7 @@ org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Profession_Type.class
 org/openmrs/module/fuschiatokenyaemr/BasicConstants.class
 org/openmrs/module/fuschiatokenyaemr/model/FuschiaDrugFormulation.class
 org/openmrs/module/fuschiatokenyaemr/model/FuschiaMethodOfEnrollment.class
+org/openmrs/module/fuschiatokenyaemr/BasicConstants$_OrderType.class
 org/openmrs/module/fuschiatokenyaemr/utils/BasicCalculationUtils.class
 org/openmrs/module/fuschiatokenyaemr/FuschiaToKenyaemrActivator.class
 org/openmrs/module/fuschiatokenyaemr/utils/ConceptFuschia$_Marital_Status.class

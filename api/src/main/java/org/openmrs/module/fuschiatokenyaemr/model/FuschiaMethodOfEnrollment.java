@@ -13,7 +13,7 @@ public class FuschiaMethodOfEnrollment {
    public static  Concept methodOfEnrollment(int val) {
 
        ConceptService conceptService = Context.getConceptService();
-        Concept method = null;
+        Concept method;
 
         if(val == 172) {
             method = conceptService.getConceptByUuid(ConceptFuschia._Mode_Of_Entry.TB_CLINIC);

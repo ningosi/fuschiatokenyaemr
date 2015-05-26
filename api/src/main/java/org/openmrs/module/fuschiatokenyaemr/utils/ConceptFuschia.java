@@ -63,7 +63,7 @@ public class ConceptFuschia {
         public static final String DIED = "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String DATE_OF_DEATH = "1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String DATE_TRANSFERED_OUT = "160649AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-        public static final String OTHER_NON_CODED = "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String UNKOWN = "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     }
 
     public static final class _VISIT_METADATA {
@@ -94,6 +94,10 @@ public class ConceptFuschia {
         public static final String ATZ = "71647AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
         //other medication orders
+
+        public static final String MEDICATION_ORDERS = "1282AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        public static final String MEDICATION_ORDER_GROUPING = "1442AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
         public static final String COTRIMOXAZOLE = "105281AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String FLUCONAZOLE = "76488AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
         public static final String ISONIAZID_PROPHYLAXIS = "1679AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";

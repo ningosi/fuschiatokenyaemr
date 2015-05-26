@@ -43,5 +43,9 @@ public class BasicConstants {
         public static final String OUTPATIENT = "3371a4d4-f66f-4454-a86d-92c7b3da990c";
     }
 
+    public static final class _OrderType {
+        public static final String DRUG = "131168f4-15f5-102d-96e4-000c29c2a5d7";
+    }
+
 
 }

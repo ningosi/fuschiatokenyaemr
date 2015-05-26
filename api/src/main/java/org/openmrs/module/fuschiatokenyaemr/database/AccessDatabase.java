@@ -5,12 +5,14 @@ import com.healthmarketscience.jackcess.Database;
 import com.healthmarketscience.jackcess.DatabaseBuilder;
 import com.healthmarketscience.jackcess.Row;
 import com.healthmarketscience.jackcess.Table;
+import org.openmrs.DrugOrder;
 import org.openmrs.Encounter;
 import org.openmrs.GlobalProperty;
 import org.openmrs.Obs;
 import org.openmrs.Patient;
 import org.openmrs.PatientIdentifier;
 import org.openmrs.PatientProgram;
+import org.openmrs.Person;
 import org.openmrs.PersonName;
 import org.openmrs.Visit;
 import org.openmrs.api.AdministrationService;
@@ -18,13 +20,17 @@ import org.openmrs.api.ConceptService;
 import org.openmrs.api.EncounterService;
 import org.openmrs.api.FormService;
 import org.openmrs.api.LocationService;
+import org.openmrs.api.ObsService;
+import org.openmrs.api.OrderService;
 import org.openmrs.api.PatientService;
 import org.openmrs.api.ProgramWorkflowService;
 import org.openmrs.api.ProviderService;
 import org.openmrs.api.UserService;
 import org.openmrs.api.VisitService;
+import org.openmrs.api.context.Context;
 import org.openmrs.module.fuschiatokenyaemr.BasicConstants;
 import org.openmrs.module.fuschiatokenyaemr.model.FuschiaCivilStatus;
+import org.openmrs.module.fuschiatokenyaemr.model.FuschiaDrugFormulation;
 import org.openmrs.module.fuschiatokenyaemr.model.FuschiaMethodOfEnrollment;
 import org.openmrs.module.fuschiatokenyaemr.model.FuschiaOpenMRSId;
 import org.openmrs.module.fuschiatokenyaemr.model.FuschiaProfession;
@@ -94,6 +100,7 @@ public class AccessDatabase {
 
     public Table getPatientTable() throws IOException {
         return getDatabase().getTable("tbpatient");
+
     }
 
     public Table getVisitsTable() throws IOException {
@@ -131,10 +138,11 @@ public class AccessDatabase {
         values.put(getPatientTable().getRowCount(), getVisitsTable().getRowCount());
         return values;
     }
-    @Transactional
+   //@Transactional
     public void savePatients() throws Exception {
 
         for(Row row : getPatientTable()) {
+
 
             Date dob;
             String name = row.getString("FdsIdOther");
@@ -196,7 +204,7 @@ public class AccessDatabase {
 
 
 
-                if (gender != null && gender.equals("0")) {
+                if (gender.equals("0")) {
                     gender = "M";
                 }
 
@@ -206,7 +214,7 @@ public class AccessDatabase {
 
                 if (dobReal != null) {
                     dob = dobReal;
-                } else if(dobReal == null && dobApproxFrom != null && age != null){
+                } else if(dobApproxFrom != null && age != null){
                     dob = CoreUtils.addDate(dobApproxFrom, age.intValue());
                 }
 
@@ -225,7 +233,8 @@ public class AccessDatabase {
                 c.add(Calendar.YEAR, -120);
 
                 Patient newPatient = new Patient();
-                if(dob.after(c.getTime())) {
+
+                if(dob.after(c.getTime()) && dob.before(new Date())) {
                     newPatient.addName(personName);
                     newPatient.setGender(gender);
                     newPatient.setBirthdate(dob);
@@ -235,12 +244,20 @@ public class AccessDatabase {
                     else {
                         newPatient.addIdentifier((FuschiaOpenMRSId._OpenMRSId()));
                     }
-                    if (aliveOrDead.intValue() == 1 && deathDate != null) {
-                        newPatient.setDead(true);
-                        newPatient.setDeathDate(deathDate);
-                        newPatient.setCauseOfDeath(conceptService.getConceptByUuid(ConceptFuschia._HIV_DISCONTINUATION.OTHER_NON_CODED));
-                    }
+                    //save the patient here
                     patientService.savePatient(newPatient);
+
+                    //check if this patient is a live or dead
+                    if (aliveOrDead.intValue() == 1 && deathDate != null) {
+                        Person person  = Context.getPersonService().getPerson(newPatient.getPersonId());
+                        person.setDead(true);
+                        person.setDeathDate(deathDate);
+                        person.setCauseOfDeath(conceptService.getConceptByUuid(ConceptFuschia._HIV_DISCONTINUATION.UNKOWN));
+
+                        //save the person in the database
+                        Context.getPersonService().savePerson(person);
+                    }
+
                 }
 
             //create a registration encounter
@@ -265,6 +282,7 @@ public class AccessDatabase {
                     maritalStatusObs.setConcept(conceptService.getConceptByUuid(ConceptFuschia._Marital_Status.CIVIL_STATUS));
                     maritalStatusObs.setValueCoded(FuschiaCivilStatus.getMaritalStatusAnswers(maritalStatus));
                     maritalStatusObs.setDateCreated(new Date());
+                    maritalStatusObs.setLocation(locationService.getLocation(2338));
 
                     registrationObs.add(maritalStatusObs);
 
@@ -278,6 +296,7 @@ public class AccessDatabase {
                     professionObs.setConcept(conceptService.getConceptByUuid(ConceptFuschia._Profession_Type.OCCUPATION));
                     professionObs.setValueCoded(FuschiaProfession.getProfessionAnswers(profession));
                     professionObs.setDateCreated(new Date());
+                    professionObs.setLocation(locationService.getLocation(2338));
 
                     registrationObs.add(professionObs);
                 }
@@ -312,7 +331,6 @@ public class AccessDatabase {
 
                     //prepare observations that will accompanied this form
                     Obs methodOfEnroll = new Obs();
-                    Set<Obs> hivEnrollmentObsSet = new HashSet<Obs>();
 
                     if (modeOfEntry != null) {
                         methodOfEnroll.setObsDatetime(dateCreated);
@@ -320,8 +338,20 @@ public class AccessDatabase {
                         methodOfEnroll.setValueCoded(FuschiaMethodOfEnrollment.methodOfEnrollment(modeOfEntry));
                         methodOfEnroll.setDateCreated(new Date());
                         methodOfEnroll.setPerson(newPatient);
+                        methodOfEnroll.setLocation(locationService.getLocation(2338));
 
-                        hivEnrollmentObsSet.add(methodOfEnroll);
+                        hivEnrollmentEncounter.addObs(methodOfEnroll);
+                    }
+
+                    else {
+                        methodOfEnroll.setObsDatetime(dateCreated);
+                        methodOfEnroll.setConcept(conceptService.getConceptByUuid(ConceptFuschia._Mode_Of_Entry.METHOD_OF_ENROLLMENT));
+                        methodOfEnroll.setValueCoded(conceptService.getConceptByUuid(ConceptFuschia._Mode_Of_Entry.OTHER));
+                        methodOfEnroll.setDateCreated(new Date());
+                        methodOfEnroll.setPerson(newPatient);
+                        methodOfEnroll.setLocation(locationService.getLocation(2338));
+
+                        hivEnrollmentEncounter.addObs(methodOfEnroll);
                     }
 
                     //transfer in details
@@ -334,14 +364,16 @@ public class AccessDatabase {
 
                     //create a discontinuation enconter
                     Encounter hivDiscontinuationEncounter = new Encounter();
-                    hivDiscontinuationEncounter.setEncounterDatetime(dateCreated);
-                    hivDiscontinuationEncounter.setDateCreated(new Date());
-                    hivDiscontinuationEncounter.setCreator(userService.getUser(1));
-                    hivDiscontinuationEncounter.setEncounterType(encounterService.getEncounterTypeByUuid(BasicConstants._EncounterType.HIV_DISCONTINUATION));
-                    hivDiscontinuationEncounter.setPatient(newPatient);
-                    hivDiscontinuationEncounter.setLocation(locationService.getLocation(2338));
-                    hivDiscontinuationEncounter.setForm(formService.getFormByUuid(BasicConstants._Form.HIV_DISCONTINUATION));
-                    hivDiscontinuationEncounter.setProvider(encounterService.getEncounterRoleByUuid("a0b03050-c99b-11e0-9572-0800200c9a66"), providerService.getProviderByUuid("ae01b8ff-a4cc-4012-bcf7-72359e852e14"));
+                    if(transferOut || deathDate != null ) {
+                        hivDiscontinuationEncounter.setEncounterDatetime(dateCreated);
+                        hivDiscontinuationEncounter.setDateCreated(new Date());
+                        hivDiscontinuationEncounter.setCreator(userService.getUser(1));
+                        hivDiscontinuationEncounter.setEncounterType(encounterService.getEncounterTypeByUuid(BasicConstants._EncounterType.HIV_DISCONTINUATION));
+                        hivDiscontinuationEncounter.setPatient(newPatient);
+                        hivDiscontinuationEncounter.setLocation(locationService.getLocation(2338));
+                        hivDiscontinuationEncounter.setForm(formService.getFormByUuid(BasicConstants._Form.HIV_DISCONTINUATION));
+                        hivDiscontinuationEncounter.setProvider(encounterService.getEncounterRoleByUuid("a0b03050-c99b-11e0-9572-0800200c9a66"), providerService.getProviderByUuid("ae01b8ff-a4cc-4012-bcf7-72359e852e14"));
+                    }
 
 
                     if (transferOut) {
@@ -351,6 +383,7 @@ public class AccessDatabase {
                         transferOutObs.setValueCoded(conceptService.getConceptByUuid(ConceptFuschia._HIV_DISCONTINUATION.TRANSFERRED_OUT));
                         transferOutObs.setDateCreated(new Date());
                         transferOutObs.setPerson(newPatient);
+                        transferOutObs.setLocation(locationService.getLocation(2338));
                         //transfer out date obs
 
                         transferOutDateObs.setObsDatetime(dateCreated);
@@ -358,6 +391,7 @@ public class AccessDatabase {
                         transferOutDateObs.setValueDatetime(transferredOutDate);
                         transferOutDateObs.setDateCreated(new Date());
                         transferOutDateObs.setPerson(newPatient);
+                        transferOutObs.setLocation(locationService.getLocation(2338));
 
                         //add to a set of obs to be tied to discontinution encounter
                         hivDiscontinueObsSetTransferOut.add(transferOutObs);
@@ -373,6 +407,7 @@ public class AccessDatabase {
                         deathObs.setValueCoded(conceptService.getConceptByUuid(ConceptFuschia._HIV_DISCONTINUATION.DIED));
                         deathObs.setDateCreated(new Date());
                         deathObs.setPerson(newPatient);
+                        deathObs.setLocation(locationService.getLocation(2338));
 
                         //get the date when the patient died
                         deathDateObs.setObsDatetime(dateCreated);
@@ -380,6 +415,7 @@ public class AccessDatabase {
                         deathDateObs.setValueDatetime(deathDate);
                         deathDateObs.setDateCreated(new Date());
                         deathDateObs.setPerson(newPatient);
+                        deathDateObs.setLocation(locationService.getLocation(2338));
 
                         //add this to discontinuation
                         hivDiscontinueObsSetDead.add(deathObs);
@@ -387,12 +423,6 @@ public class AccessDatabase {
                         hivDiscontinuationEncounter.setObs(hivDiscontinueObsSetDead);
 
                     }
-
-                    //create a set to add all related hiv enrollment observations
-
-
-                    //tie those set of observations to the encounter and save them into openmrs
-                    hivEnrollmentEncounter.setObs(hivEnrollmentObsSet);
 
                     if (!(hivEnrollmentEncounter.getAllObs().isEmpty()) && hivEnrollmentEncounter.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                         encounterService.saveEncounter(hivEnrollmentEncounter);
@@ -407,7 +437,7 @@ public class AccessDatabase {
                         programWorkflowService.savePatientProgram(hivProgramEnrollment);
                     }
 
-                    if (!(hivDiscontinuationEncounter.getAllObs().isEmpty()) && hivDiscontinuationEncounter.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
+                    if ((hivDiscontinuationEncounter.getAllObs().size() > 3) && hivDiscontinuationEncounter.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                         encounterService.saveEncounter(hivDiscontinuationEncounter);
                         PatientProgram hivProgramDiscontinuation = new PatientProgram();
                         hivProgramDiscontinuation.setDateCompleted(dateCreated);
@@ -423,37 +453,39 @@ public class AccessDatabase {
 
 
                     //prepare an encounter to save the who stage as presented in the tables
+                    if(age != null) {
+                        Encounter hivConsultationAdd = new Encounter();
+                        hivConsultationAdd.setEncounterDatetime(dateCreated);
+                        hivConsultationAdd.setEncounterType(encounterService.getEncounterTypeByUuid(BasicConstants._EncounterType.HIV_CONSULTATION));
+                        hivConsultationAdd.setPatient(newPatient);
+                        hivConsultationAdd.setLocation(locationService.getLocation(2338));
+                        hivConsultationAdd.setForm(formService.getFormByUuid(BasicConstants._Form.CLINICAL_ENCOUNTER_HIV_ADDENDUM));
+                        hivConsultationAdd.setProvider(encounterService.getEncounterRoleByUuid("a0b03050-c99b-11e0-9572-0800200c9a66"), providerService.getProviderByUuid("ae01b8ff-a4cc-4012-bcf7-72359e852e14"));
+                        hivConsultationAdd.setDateCreated(new Date());
+                        hivConsultationAdd.setCreator(userService.getUser(1));
 
-                    Encounter hivConsultationAdd = new Encounter();
-                    hivConsultationAdd.setEncounterDatetime(dateCreated);
-                    hivConsultationAdd.setEncounterType(encounterService.getEncounterTypeByUuid(BasicConstants._EncounterType.HIV_CONSULTATION));
-                    hivConsultationAdd.setPatient(newPatient);
-                    hivConsultationAdd.setLocation(locationService.getLocation(2338));
-                    hivConsultationAdd.setForm(formService.getFormByUuid(BasicConstants._Form.CLINICAL_ENCOUNTER_HIV_ADDENDUM));
-                    hivConsultationAdd.setProvider(encounterService.getEncounterRoleByUuid("a0b03050-c99b-11e0-9572-0800200c9a66"), providerService.getProviderByUuid("ae01b8ff-a4cc-4012-bcf7-72359e852e14"));
-                    hivConsultationAdd.setDateCreated(new Date());
-                    hivConsultationAdd.setCreator(userService.getUser(1));
+                        //populate the who stage obs
+                        Obs whoStageObs = new Obs();
 
-                    //populate the who stage obs
-                    Obs whoStageObs = new Obs();
-                    if (age != null) {
                         whoStageObs.setObsDatetime(dateCreated);
                         whoStageObs.setConcept(conceptService.getConceptByUuid(ConceptFuschia._WHO_STAGE.CURRENT_WHO_STAGE));
                         whoStageObs.setValueCoded(FuschiaWhoStaging.whoStaging(whoStage, age.intValue()));
                         whoStageObs.setDateCreated(new Date());
                         whoStageObs.setPerson(newPatient);
+                        whoStageObs.setLocation(locationService.getLocation(2338));
+                        whoStageObs.setEncounter(hivConsultationAdd);
 
 
                         //tie the who stage to the addendum and save
                         hivConsultationAdd.addObs(whoStageObs);
-                        if (!(hivConsultationAdd.getAllObs().isEmpty()) && hivConsultationAdd.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
+                        if ((hivConsultationAdd.getAllObs().size() > 3) && hivConsultationAdd.getEncounterDatetime().before(new Date()) && CoreUtils.integersOnly(identifier1)) {
                             encounterService.saveEncounter(hivConsultationAdd);
                         }
+
                     }
                 }
 
                 //save visits from here
-                System.out.println("Patient "+fuschiaPatientDataBaseId+" has "+visitMatchingRows(fuschiaPatientDataBaseId).size()+" visits");
                 for(Row visitRow: visitMatchingRows(fuschiaPatientDataBaseId)) {
 
                     FuschiaVisits fuschiaVisits = new FuschiaVisits();
@@ -495,89 +527,106 @@ public class AccessDatabase {
                         //return visit date
                         //create a set of all the observations
                         Set<Obs> visitObs = new HashSet<Obs>();
-                        Obs dateOfNextAppointment = new Obs();
+
                         if(fuschiaVisits.getVisitDate() != null) {
+                            Obs dateOfNextAppointment = new Obs();
                             dateOfNextAppointment.setPerson(newPatient);
                             dateOfNextAppointment.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.RETURN_VISIT_DATE));
                             dateOfNextAppointment.setValueDatetime(fuschiaVisits.getNextAppointmentDate());
                             dateOfNextAppointment.setObsDatetime(visitDate);
                             dateOfNextAppointment.setDateCreated(new Date());
+                            dateOfNextAppointment.setLocation(locationService.getLocation(2338));
+                            dateOfNextAppointment.setEncounter(consultationsEncounter);
 
                             visitObs.add(dateOfNextAppointment);
                         }
 
                         //cd4
-                        Obs cd4 = new Obs();
+
                         if(fuschiaVisits.getCd4() != null) {
+                            Obs cd4 = new Obs();
                             cd4.setPerson(newPatient);
                             cd4.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.CD4_COUNT));
                             cd4.setValueNumeric(fuschiaVisits.getCd4().doubleValue());
                             cd4.setObsDatetime(visitDate);
                             cd4.setDateCreated(new Date());
+                            cd4.setLocation(locationService.getLocation(2338));
+                            cd4.setEncounter(consultationsEncounter);
 
 
                             visitObs.add(cd4);
                         }
 
                         //viral load
-                        Obs viralLoad = new Obs();
+
                         if(fuschiaVisits.getViralLoad() != null) {
+                            Obs viralLoad = new Obs();
                             viralLoad.setObsDatetime(visitDate);
                             viralLoad.setPerson(newPatient);
                             viralLoad.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HIV_VIRAL_LOAD));
                             viralLoad.setValueNumeric(fuschiaVisits.getViralLoad().doubleValue());
                             viralLoad.setDateCreated(new Date());
+                            viralLoad.setLocation(locationService.getLocation(2338));
+                            viralLoad.setEncounter(consultationsEncounter);
 
                             visitObs.add(viralLoad);
                         }
 
                         //weight
-                        Obs weight = new Obs();
+
                         if(fuschiaVisits.getWeight() != null) {
+                            Obs weight = new Obs();
                             weight.setObsDatetime(visitDate);
                             weight.setPerson(newPatient);
                             weight.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.WEIGHT_KG));
                             weight.setValueNumeric(fuschiaVisits.getWeight().doubleValue());
                             weight.setDateCreated(new Date());
+                            weight.setLocation(locationService.getLocation(2338));
+                            weight.setEncounter(consultationsEncounter);
 
                             visitObs.add(weight);
                         }
 
                         //Height
-                        Obs height = new Obs();
+
                         if(fuschiaVisits.getHeight() != null) {
+                            Obs height = new Obs();
                             height.setObsDatetime(visitDate);
                             height.setPerson(newPatient);
                             height.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HEIGHT_CM));
                             height.setValueNumeric(fuschiaVisits.getHeight().doubleValue());
                             height.setDateCreated(new Date());
+                            height.setLocation(locationService.getLocation(2338));
+                            height.setEncounter(consultationsEncounter);
 
                             visitObs.add(height);
                         }
 
                         //hgb
-                        Obs hgb = new Obs();
+
                         if(fuschiaVisits.getHgb() != null) {
+                            Obs hgb = new Obs();
                             hgb.setObsDatetime(visitDate);
                             hgb.setPerson(newPatient);
                             hgb.setConcept(conceptService.getConceptByUuid(ConceptFuschia._VISIT_METADATA.HGB));
                             hgb.setValueNumeric(fuschiaVisits.getHgb().doubleValue());
                             hgb.setDateCreated(new Date());
+                            hgb.setLocation(locationService.getLocation(2338));
+                            hgb.setEncounter(consultationsEncounter);
 
                             visitObs.add(hgb);
                         }
                         //add those obs to an encounter
-                        if(!(visitObs.isEmpty())) {
+                        if((visitObs.size() > 0)) {
                             consultationsEncounter.setObs(visitObs);
                         }
 
                         //tie that encounter to a visit
-                        if(consultationsEncounter.getAllObs() != null) {
+                        if((consultationsEncounter.getAllObs().size() > 3)) {
+                            encounterService.saveEncounter(consultationsEncounter);
+                            //add that encounter to the visit
                             visit.addEncounter(consultationsEncounter);
-                        }
-
-                        //save the visit
-                        if(!(visit.getEncounters().isEmpty())) {
+                            //save the visit in the database
                             visitService.saveVisit(visit);
                         }
 
@@ -585,17 +634,103 @@ public class AccessDatabase {
 
                 }
                 //save drug orders from here
-                System.out.println("Patient "+fuschiaPatientDataBaseId+" has "+getPatientDrugOrders(fuschiaPatientDataBaseId)+" drug orders");
 
                 //list all the data variables that will be fetched from the drug table
+
+                Integer order;
+                Date startDate;
+                Date dateDrugOrderCreated;
                 for(Row drugOrder : getPatientDrugOrders(fuschiaPatientDataBaseId)) {
+                    OrderService orderService = Context.getOrderService();
+                    order = drugOrder.getInt("FdxReferenceDrug");
+                    startDate = drugOrder.getDate("FddBeginning");
+                    dateDrugOrderCreated = drugOrder.getDate("FddCreated");
+
+                    Date mustDrugStartDate = startDate;
+
+                    if(mustDrugStartDate == null) {
+                        mustDrugStartDate = dateDrugOrderCreated;
+                    }
+                    //loop through all the drug orders given for this row
+                    for(DrugOrder orders : FuschiaDrugFormulation.getDrugFuschiaDrugOder(order, mustDrugStartDate, newPatient, dateDrugOrderCreated)){
+                        //call service method to save the drug order
+                        if(mustDrugStartDate.before(new Date())) {
+                            orderService.saveOrder(orders);
+                        }
+                    }
+
+                    //save medication orders here if any for this row
+                    if(FuschiaDrugFormulation.isMedicationOrder(order)) {
+                        //you will create a medication order for the observation and save those
+                        //we create an encounter
+                        Encounter medicationOrderEncounter = new Encounter();
+                        medicationOrderEncounter.setEncounterDatetime(dateDrugOrderCreated);
+                        medicationOrderEncounter.setLocation(locationService.getLocation(2338));
+                        medicationOrderEncounter.setProvider(encounterService.getEncounterRoleByUuid("a0b03050-c99b-11e0-9572-0800200c9a66"), providerService.getProviderByUuid("ae01b8ff-a4cc-4012-bcf7-72359e852e14"));
+                        medicationOrderEncounter.setEncounterType(encounterService.getEncounterTypeByUuid(BasicConstants._EncounterType.HIV_CONSULTATION));
+                        medicationOrderEncounter.setForm(formService.getFormByUuid(BasicConstants._Form.MOH_257_VISIT_SUMMARY));
+                        medicationOrderEncounter.setDateCreated(new Date());
+                        medicationOrderEncounter.setCreator(userService.getUser(1));
+                        medicationOrderEncounter.setPatient(newPatient);
+
+                        //create an obs group for medication orders
+                        ObsService obsService = Context.getObsService();
+                        Obs medicationOrdersObsGroup = new Obs();
+                        medicationOrdersObsGroup.setObsDatetime(dateDrugOrderCreated);
+                        medicationOrdersObsGroup.setConcept(conceptService.getConceptByUuid(ConceptFuschia._DRUGS.MEDICATION_ORDER_GROUPING));
+                        medicationOrdersObsGroup.setPerson(newPatient);
+                        medicationOrdersObsGroup.setDateCreated(new Date());
+                        medicationOrdersObsGroup.setLocation(locationService.getLocation(2338));
+                        medicationOrdersObsGroup.setEncounter(medicationOrderEncounter);
+
+                        //add this observation to an encounter and save the encounter
+                        medicationOrderEncounter.addObs(medicationOrdersObsGroup);
+                        //save the encounter with the obs
+
+                        encounterService.saveEncounter(medicationOrderEncounter);
+
+
+
+                        //create observation for that obs value
+                        Obs medicationOrderObs = new Obs();
+                        medicationOrderObs.setObsDatetime(dateDrugOrderCreated);
+                        medicationOrderObs.setConcept(conceptService.getConceptByUuid(ConceptFuschia._DRUGS.MEDICATION_ORDERS));
+                        medicationOrderObs.setPerson(newPatient);
+                        medicationOrderObs.setDateCreated(new Date());
+                        medicationOrderObs.setValueCoded(FuschiaDrugFormulation.medicationOrderAnswers(order));
+                        medicationOrderObs.setObsGroup(medicationOrdersObsGroup);
+                        medicationOrderObs.setLocation(locationService.getLocation(2338));
+                        medicationOrderObs.setEncounter(medicationOrderEncounter);
+
+                        //tie that observation to an encounter
+                        medicationOrderEncounter.addObs(medicationOrderObs);
+
+                        //tie that encounter to a visit
+                        Visit medicationOrderVisit = new Visit();
+                        medicationOrderVisit.setStartDatetime(dateDrugOrderCreated);
+                        medicationOrderVisit.setPatient(newPatient);
+                        medicationOrderVisit.setLocation(locationService.getLocation(2338));
+                        medicationOrderVisit.setVisitType(visitService.getVisitTypeByUuid(BasicConstants._VisitType.OUTPATIENT));
+
+
+
+                        //save the visit to the database
+                        if(medicationOrderVisit.getStartDatetime() != null && medicationOrderVisit.getStartDatetime().before(new Date())) {
+                            encounterService.saveEncounter(medicationOrderEncounter);
+                            medicationOrderVisit.addEncounter(medicationOrderEncounter);
+                            visitService.saveVisit(medicationOrderVisit);
+                        }
+
+                    }
 
                 }
 
-                //save medication orders here if any
+
             }
 
         }
+       //close the database instance
+       getDatabase().close();
     }
 
 

@@ -4,11 +4,16 @@ import org.openmrs.Concept;
 import org.openmrs.DrugOrder;
 import org.openmrs.Patient;
 import org.openmrs.api.ConceptService;
+import org.openmrs.api.OrderService;
 import org.openmrs.api.context.Context;
+import org.openmrs.module.fuschiatokenyaemr.BasicConstants;
 import org.openmrs.module.fuschiatokenyaemr.utils.ConceptFuschia;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -19,6 +24,7 @@ public class FuschiaDrugFormulation {
     public static Set<DrugOrder> getDrugFuschiaDrugOder(Integer order, Date startDate, Patient patient, Date dateCreated){
         Set<DrugOrder> drugOrderSet = new HashSet<DrugOrder>();
         ConceptService conceptService = Context.getConceptService();
+        OrderService orderService = Context.getOrderService();
 
         if(order == 39 || order == 226 || order == 227 || order == 238) {
             DrugOrder drugOrderD4T = new DrugOrder();
@@ -29,6 +35,7 @@ public class FuschiaDrugFormulation {
             drugOrderD4T.setDose(300.0);
             drugOrderD4T.setUnits("mg");
             drugOrderD4T.setFrequency("Once daily");
+            drugOrderD4T.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderD4T);
         }
@@ -41,6 +48,7 @@ public class FuschiaDrugFormulation {
             drugOrderNVP.setDose(300.0);
             drugOrderNVP.setUnits("mg");
             drugOrderNVP.setFrequency("Once daily");
+            drugOrderNVP.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderNVP);
         }
@@ -54,6 +62,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC.setDose(300.0);
             drugOrder3TC.setUnits("mg");
             drugOrder3TC.setFrequency("Once daily");
+            drugOrder3TC.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrder3TC);
 
@@ -69,6 +78,7 @@ public class FuschiaDrugFormulation {
             drugOrderEFV.setDose(600.0);
             drugOrderEFV.setUnits("mg");
             drugOrderEFV.setFrequency("Once daily");
+            drugOrderEFV.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderEFV);
 
@@ -83,6 +93,7 @@ public class FuschiaDrugFormulation {
             drugOrderDDI.setDose(400.0);
             drugOrderDDI.setUnits("mg");
             drugOrderDDI.setFrequency("Once daily");
+            drugOrderDDI.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderDDI);
 
@@ -98,6 +109,7 @@ public class FuschiaDrugFormulation {
             drugOrderD4T218.setDose(300.0);
             drugOrderD4T218.setUnits("mg");
             drugOrderD4T218.setFrequency("Once daily");
+            drugOrderD4T218.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrder3TC218 = new DrugOrder();
             drugOrder3TC218.setStartDate(startDate);
@@ -107,6 +119,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC218.setDose(300.0);
             drugOrder3TC218.setUnits("mg");
             drugOrder3TC218.setFrequency("Once daily");
+            drugOrder3TC218.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrderNVP218 = new DrugOrder();
             drugOrderNVP218.setStartDate(startDate);
@@ -116,6 +129,7 @@ public class FuschiaDrugFormulation {
             drugOrderNVP218.setDose(300.0);
             drugOrderNVP218.setUnits("mg");
             drugOrderNVP218.setFrequency("Once daily");
+            drugOrderNVP218.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderD4T218);
             drugOrderSet.add(drugOrder3TC218);
@@ -133,6 +147,7 @@ public class FuschiaDrugFormulation {
             drugOrderAZT224.setDose(300.0);
             drugOrderAZT224.setUnits("mg");
             drugOrderAZT224.setFrequency("Once daily");
+            drugOrderAZT224.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrder3TC224 = new DrugOrder();
             drugOrder3TC224.setStartDate(startDate);
@@ -142,6 +157,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC224.setDose(300.0);
             drugOrder3TC224.setUnits("mg");
             drugOrder3TC224.setFrequency("Once daily");
+            drugOrder3TC224.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrder3TC224);
             drugOrderSet.add(drugOrderAZT224);
@@ -157,6 +173,7 @@ public class FuschiaDrugFormulation {
             drugOrderD4T222223.setDose(300.0);
             drugOrderD4T222223.setUnits("mg");
             drugOrderD4T222223.setFrequency("Once daily");
+            drugOrderD4T222223.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrder3TC222223 = new DrugOrder();
             drugOrder3TC222223.setStartDate(startDate);
@@ -166,6 +183,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC222223.setDose(300.0);
             drugOrder3TC222223.setUnits("mg");
             drugOrder3TC222223.setFrequency("Once daily");
+            drugOrder3TC222223.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderD4T222223);
             drugOrderSet.add(drugOrder3TC222223);
@@ -180,6 +198,7 @@ public class FuschiaDrugFormulation {
             drugOrderAZT221.setDose(300.0);
             drugOrderAZT221.setUnits("mg");
             drugOrderAZT221.setFrequency("Once daily");
+            drugOrderAZT221.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrder3TC221 = new DrugOrder();
             drugOrder3TC221.setStartDate(startDate);
@@ -189,6 +208,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC221.setDose(300.0);
             drugOrder3TC221.setUnits("mg");
             drugOrder3TC221.setFrequency("Once daily");
+            drugOrder3TC221.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrderABC221 = new DrugOrder();
             drugOrderABC221.setStartDate(startDate);
@@ -198,6 +218,7 @@ public class FuschiaDrugFormulation {
             drugOrderABC221.setDose(300.0);
             drugOrderABC221.setUnits("mg");
             drugOrderABC221.setFrequency("Once daily");
+            drugOrderABC221.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderAZT221);
             drugOrderSet.add(drugOrder3TC221);
@@ -213,6 +234,7 @@ public class FuschiaDrugFormulation {
             drugOrderTDF225.setDose(300.0);
             drugOrderTDF225.setUnits("mg");
             drugOrderTDF225.setFrequency("Once daily");
+            drugOrderTDF225.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrderFTC225 = new DrugOrder();
             drugOrderFTC225.setStartDate(startDate);
@@ -222,6 +244,7 @@ public class FuschiaDrugFormulation {
             drugOrderFTC225.setDose(300.0);
             drugOrderFTC225.setUnits("mg");
             drugOrderFTC225.setFrequency("Once daily");
+            drugOrderFTC225.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderTDF225);
             drugOrderSet.add(drugOrderFTC225);
@@ -236,6 +259,7 @@ public class FuschiaDrugFormulation {
             drugOrderAZT220234.setDose(300.0);
             drugOrderAZT220234.setUnits("mg");
             drugOrderAZT220234.setFrequency("Once daily");
+            drugOrderAZT220234.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrder3TC220234 = new DrugOrder();
             drugOrder3TC220234.setStartDate(startDate);
@@ -245,6 +269,7 @@ public class FuschiaDrugFormulation {
             drugOrder3TC220234.setDose(300.0);
             drugOrder3TC220234.setUnits("mg");
             drugOrder3TC220234.setFrequency("Once daily");
+            drugOrder3TC220234.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrderNVP220234 = new DrugOrder();
             drugOrderNVP220234.setStartDate(startDate);
@@ -254,6 +279,7 @@ public class FuschiaDrugFormulation {
             drugOrderNVP220234.setDose(300.0);
             drugOrderNVP220234.setUnits("mg");
             drugOrderNVP220234.setFrequency("Once daily");
+            drugOrderNVP220234.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderAZT220234);
             drugOrderSet.add(drugOrder3TC220234);
@@ -270,6 +296,7 @@ public class FuschiaDrugFormulation {
             drugOrderAZT38.setDose(300.0);
             drugOrderAZT38.setUnits("mg");
             drugOrderAZT38.setFrequency("Once daily");
+            drugOrderAZT38.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderAZT38);
         }
@@ -284,6 +311,7 @@ public class FuschiaDrugFormulation {
             drugOrderABC35.setDose(300.0);
             drugOrderABC35.setUnits("mg");
             drugOrderABC35.setFrequency("Once daily");
+            drugOrderABC35.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderABC35);
         }
@@ -298,6 +326,7 @@ public class FuschiaDrugFormulation {
             drugOrderAPV37.setDose(300.0);
             drugOrderAPV37.setUnits("mg");
             drugOrderAPV37.setFrequency("Once daily");
+            drugOrderAPV37.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderAPV37);
 
@@ -313,6 +342,7 @@ public class FuschiaDrugFormulation {
             drugOrderIDV44.setDose(300.0);
             drugOrderIDV44.setUnits("mg");
             drugOrderIDV44.setFrequency("Once daily");
+            drugOrderIDV44.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderIDV44);
 
@@ -328,6 +358,7 @@ public class FuschiaDrugFormulation {
             drugOrderLVP.setDose(300.0);
             drugOrderLVP.setUnits("mg");
             drugOrderLVP.setFrequency("Once daily");
+            drugOrderLVP.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             DrugOrder drugOrderRTV = new DrugOrder();
             drugOrderRTV.setStartDate(startDate);
@@ -337,6 +368,7 @@ public class FuschiaDrugFormulation {
             drugOrderRTV.setDose(300.0);
             drugOrderRTV.setUnits("mg");
             drugOrderRTV.setFrequency("Once daily");
+            drugOrderRTV.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderLVP);
             drugOrderSet.add(drugOrderRTV);
@@ -353,6 +385,7 @@ public class FuschiaDrugFormulation {
             drugOrderNFV.setDose(300.0);
             drugOrderNFV.setUnits("mg");
             drugOrderNFV.setFrequency("Once daily");
+            drugOrderNFV.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderNFV);
         }
@@ -367,6 +400,7 @@ public class FuschiaDrugFormulation {
             drugOrderRTV.setDose(300.0);
             drugOrderRTV.setUnits("mg");
             drugOrderRTV.setFrequency("Once daily");
+            drugOrderRTV.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderRTV);
         }
@@ -381,6 +415,7 @@ public class FuschiaDrugFormulation {
             drugOrderSQV.setDose(300.0);
             drugOrderSQV.setUnits("mg");
             drugOrderSQV.setFrequency("Once daily");
+            drugOrderSQV.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderSQV);
         }
@@ -395,6 +430,7 @@ public class FuschiaDrugFormulation {
             drugOrderFTC.setDose(300.0);
             drugOrderFTC.setUnits("mg");
             drugOrderFTC.setFrequency("Once daily");
+            drugOrderFTC.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderFTC);
         }
@@ -409,6 +445,8 @@ public class FuschiaDrugFormulation {
             drugOrderTDF.setDose(300.0);
             drugOrderTDF.setUnits("mg");
             drugOrderTDF.setFrequency("Once daily");
+            drugOrderTDF.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
+
 
             drugOrderSet.add(drugOrderTDF);
         }
@@ -423,6 +461,7 @@ public class FuschiaDrugFormulation {
             drugOrderATZ.setDose(300.0);
             drugOrderATZ.setUnits("mg");
             drugOrderATZ.setFrequency("Once daily");
+            drugOrderATZ.setOrderType(orderService.getOrderTypeByUuid(BasicConstants._OrderType.DRUG));
 
             drugOrderSet.add(drugOrderATZ);
         }
@@ -460,5 +499,17 @@ public class FuschiaDrugFormulation {
         }
 
          return concept;
+    }
+
+    public static  Boolean isMedicationOrder(Integer value) {
+        Boolean status = false;
+        List<Integer> listOfPossibleValues = Arrays.asList(51, 52, 53, 54, 148, 149, 150, 151, 246, 247);
+
+        if(listOfPossibleValues.contains(value)) {
+
+            status = true;
+        }
+
+        return status;
     }
 }

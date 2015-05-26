@@ -51,7 +51,7 @@ public class FuschiaWhoStaging {
         return stage;
     }
 
-    public static final Integer integersValuesFromString(String val) {
+    public static Integer integersValuesFromString(String val) {
         Integer valueFromString;
         String value = null ;
         if(val != null) {
